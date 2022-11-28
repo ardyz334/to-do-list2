@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To do list</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="wrapper__done none">
+      <div class="con ">
+        <h1>Task Saved</h1>
+        <button>Ok</button>
+      </div> -->
+    </div>
+  <div class="wrapper__modal none">
+    <div class="container__modal">
+      <h1>Task editing</h1>
+      <form class="ed1">
+        <div class="wrapper__input">
+          <div g1>
+            <label>Edit name</label>
+            <input class="edit-name" type="text" />
+          </div>
+          <div g2>
+            <label>edit dedline</label>
+            <input class="edit-date" type="date" />
+          </div>
+          <div g3>
+            <label>Edit type</label>
+            <select class="select_modal">
+              <option value="important task">important task</option>
+              <option value="secondary objective">secondary objective</option>
+              <option value="planned task">planned task</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <textarea class="edit_decr" name="" id="" cols="50" rows="10"></textarea>
+        </div>
+        <div class="btns">
+        <button class="btnEdit">Edit task</button>
+        <button class="btn-close">Close</button>
+      </div>
+      </form>
+    </div>
+  </div>
+  <header>
+    <h1 class="d1">ADD TASK</h1>
+    <img src=".\img\Logo.png" alt="Logo" class="logo">
+    <form class="formTask">
+      <div class="wrapper__info">
+        <div class="f1">
+          <label>Name tasks</label>
+          <input class="name"  type="text" />
+        </div>
+        <div class="f2">
+          <label>Dedline tasks</label>
+          <input class="date" type="date" />
+        </div>
+        <div class="f3">
+          <label>Type task</label>
+          <select class="select_page">
+            <option hidden>Select tasks</option>
+            <option value="important task">important task</option>
+            <option value="secondary objective">secondary objective</option>
+            <option value="planned task">planned task</option>
+          </select>
+        </div>
+      </div>
+      <div class="description">
+        <textarea  name="" id="" cols="100" rows="4" class="txt-page">
+  
+          </textarea>
+      </div>
+      <button class="btn_save">Save Task</button>
+    </form>
+    <main>
+      <div class="search">
+        <div class="wrapper_search">
+          <input class="searach_name-task" type="text">
+          <button>search</button>
+        </div>
+        <div class="wrapper_filter">
+          <select class="select_filter">
+            <option value="allTasks">All tasks</option>
+            <option value="important task">important task</option>
+            <option value="secondary objective">secondary objective</option>
+            <option value="planned task">planned task</option>
+          </select>
+        </div>
+      </div>
+      <ol></ol>
+    </main>
+  </header>
+
+  <script src="./script.js"></script>
+</div>
+</body>
+
+</html>
